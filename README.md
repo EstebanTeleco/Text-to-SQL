@@ -1,17 +1,17 @@
 # OSIPTEL Text-to-SQL
 
-Agente que traduce preguntas en español a consultas SQL y las ejecuta contra una base de datos real de cobertura móvil en el Perú, publicada por OSIPTEL (Organismo Supervisor de Inversión Privada en Telecomunicaciones).
+Aplicación que traduce preguntas en español a consultas SQL y las ejecuta contra una base de datos real de cobertura móvil en el Perú, publicada por OSIPTEL (Organismo Supervisor de Inversión Privada en Telecomunicaciones).
 
 ## Qué hace
 
-1. Escribes una pregunta en español, por ejemplo: *"¿Qué operadora tiene más cobertura 4G?"*
+1. Escribes una pregunta en español, por ejemplo: ¿Qué operadora tiene más cobertura 4G?
 2. Gemini traduce la pregunta a SQL usando el esquema de la base de datos como contexto.
 3. El SQL se valida (solo se permiten consultas `SELECT`, nunca `INSERT`/`UPDATE`/`DELETE`/`DROP`).
 4. Se ejecuta contra SQLite y el resultado se muestra en una interfaz web (Streamlit).
 
 ## Por qué este proyecto
 
-Quería practicar SQL y a la vez mostrar algo de AI engineering para entrevistas, así que en vez de usar un dataset ya limpio de Kaggle elegí datos abiertos reales del Perú, con los problemas de calidad típicos de un dataset gubernamental (encoding raro, inconsistencias de texto, formato wide poco práctico para consultas).
+Quería practicar SQL y trabajar con datos reales, así que en lugar de usar un dataset limpio de Kaggle, elegí datos abiertos del Perú. Esto me permitió enfrentar problemas comunes en proyectos reales, como encoding, inconsistencias de texto y un formato wide poco práctico para consultas y análisis.
 
 ## Fuente de datos
 
